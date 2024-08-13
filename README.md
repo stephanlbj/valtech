@@ -5,7 +5,9 @@ This is the Valtech Front challenge
 ## Getting Started
 
 1 - fork the repository so you can work with it
+
 2 - install all the dependencies `npm install`
+
 3 - run the development server
 
 ```bash
