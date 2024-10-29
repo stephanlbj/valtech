@@ -1,0 +1,6 @@
+.Wrapper{
+    position: relative;
+    width: min(90%,1196px);
+    margin-inline: auto;
+    margin-bottom: 4.14rem;
+}

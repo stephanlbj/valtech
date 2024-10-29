@@ -1,0 +1,30 @@
+.Wrapper {
+    position: relative;
+    width: min(90%,1196px);
+    margin-inline: auto;
+    height: 100%;
+    margin: 8.14rem auto;
+}
+
+.Offices{
+    margin: 2.14rem auto;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(284px,1fr));
+}
+
+.Offices > :first-child,
+.Offices > :last-child {
+    grid-column: span 2; 
+}
+
+@media (max-width: 768px) {
+    .Offices {
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+
+   
+}
+
+ 

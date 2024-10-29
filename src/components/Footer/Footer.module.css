@@ -1,0 +1,25 @@
+.Footer{
+    position: relative;
+    background-color: var(--main-text-color);
+    width: 100%; 
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 400px;
+    position: relative;
+}
+
+.Footertext{
+color: white;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.Image{
+    object-fit: cover;
+}

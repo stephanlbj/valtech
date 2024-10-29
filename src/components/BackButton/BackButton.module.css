@@ -1,0 +1,12 @@
+.BackBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 4.14rem auto;
+    color: var(--main-text-color);
+}
+
+.Link{
+ text-decoration: none;
+}

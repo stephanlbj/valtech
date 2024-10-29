@@ -1,0 +1,11 @@
+:root {
+    --primary-red: #FF5959;
+    --main-text-color:#171717;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}

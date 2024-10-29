@@ -1,0 +1,77 @@
+.Slider {
+    position: relative;
+    width: min(90%, 1196px);
+    margin-inline: auto;
+    min-height: 454px;   
+    overflow: hidden; 
+}
+
+.Slider > div {
+    display: none;  
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;  
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.Slider > div.active {
+    display: block;  
+    opacity: 1;  
+    transform: translateX(0); 
+}
+
+.Slider > div.hidden {
+    opacity: 0;  
+    transform: translateX(-100%); 
+}
+
+.SliderImg {
+    position: relative;
+    width: 100%;
+    min-height: 454px; 
+    aspect-ratio: 1196 /454;
+    transition: opacity 0.5s ease; 
+}
+
+.Image {
+    object-fit: cover;
+}
+
+.SliderBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90%, 1150px);
+    z-index: 9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SliderParagraph {
+    position: absolute;
+    right: 2.9rem;
+    bottom: 1rem;
+    font-weight: 100;
+    font-size: clamp(0.6rem, 1vw + 1rem, 0.9rem);
+    width: min(40%, 583px);
+    text-align: end;
+}
+
+.SliderParagraph span {
+    color: var(--primary-red);
+    font-weight: bold;
+}
+
+.SliderBtn button {
+    background-color: transparent;
+    border: none;
+    font-weight: 100;
+    font-size: clamp(1.25rem, 1vw + 1rem, 2.2rem);
+    cursor: pointer;
+}

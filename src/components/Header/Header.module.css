@@ -1,0 +1,34 @@
+.Container{
+    position: relative;
+    background-color: var(--primary-red);
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Logo {
+    margin: 1.87rem  1.87rem ; 
+    aspect-ratio: 181 / 40;
+    width: 100%; 
+}
+ 
+@media (max-width: 1024px) {
+    .Logo {
+        margin: 20px 0 20px 12%; 
+        max-width: 150px; 
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .Logo {
+        margin: 10px 0 10px 16%;
+        max-width: 140px;
+        width: auto;
+    }
+} 
+
+
+
+

@@ -1,22 +1,24 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { PropsWithChildren } from "react";
+import dynamic from 'next/dynamic'
+
+const Header = dynamic(() => import('@/components/Header/Header'));
+const Footer = dynamic(() => import('@/components/Footer/Footer'));
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Valtech Front Challenge",
-  description: "Valtech react front challenge",
-};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+type RootLayoutProps = PropsWithChildren<{}>;
+
+export default function RootLayout({ children}: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+     <body className={inter.className}>
+     <Header/>
+        {children}
+    <Footer/>
+      </body>
     </html>
   );
 }

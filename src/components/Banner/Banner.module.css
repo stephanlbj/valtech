@@ -1,0 +1,80 @@
+.Wrapper {
+    position: relative;
+    width: min(90%,1196px);
+    margin-inline: auto;
+    height: 100%;
+    min-height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8.14rem auto;
+}
+
+.Banner {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    aspect-ratio: 299/120;
+}
+
+.Image ,
+.ForegroundImage{
+    object-fit: cover; 
+}
+
+.Foreground {
+    position: absolute;
+    left: 7.62rem;
+    min-height: 560px;
+    max-width: 345px;
+    width: 100%;
+    z-index: 90; 
+    aspect-ratio: 23 / 38;
+    
+}
+
+.TextOverlay {
+    position: absolute;   
+    top: 50%;
+    right:  0.80rem;           
+    color: var(--main-text-color); 
+    text-align: end;
+}
+
+.Title {
+    font-size: clamp(0.85rem, 1vw + 0.5rem, 2rem);
+    line-height: 2.6;
+}
+ 
+.Description {
+    font-size: clamp(0.65rem, 1vw + 0.8rem, 1.25rem);
+    line-height: 1.5;
+    font-weight: 400;   
+}
+
+@media (max-width: 1024px) {
+    .Wrapper {
+        margin: 7.5rem auto;
+
+    }
+
+    .Foreground{
+        width: 40%;
+        left: 2.62rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .Wrapper {
+        margin: 5.75rem auto;
+        width: 90%;
+       
+    }
+
+    .Foreground{
+        width: 40%;  
+        left: 1.62rem;    
+}
+}
+
+
