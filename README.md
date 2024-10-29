@@ -1,23 +1,24 @@
-# front-code-challenge
+Valtech Front Challenge
+Bienvenue dans le projet Valtech Front Challenge. Ce projet a été créé avec Next.js (version 14.2.5) et utilise React (version 18) comme bibliothèque d'interface utilisateur.
 
-This is the Valtech Front challenge
+Prérequis
+Avant de commencer, assurez-vous d'avoir installé Node.js (version 14 ou supérieure) et npm (le gestionnaire de paquets de Node.js).
 
-## Getting Started
+Installation
+Clonez le dépôt GitHub sur votre machine locale :
 
-1 - fork the repository so you can work with it
+git clone https://github.com/username/valtech-front-challenge.git
+cd valtech-front-challenge
+Installez les dépendances du projet :
 
-2 - install all the dependencies `npm install`
+npm install
 
-3 - run the development server
-
-```bash
+Pour démarrer le serveur de développement, utilisez la commande suivante :
 npm run dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4 Pour créer une version optimisée de votre application, exécutez :
 
-## Useful resources
+npm run build
 
-[Project Figma](https://www.figma.com/design/VSzml7sK3UraIJpYwGg9eQ/Valtech-Tech-Challenge?node-id=0-1&t=IpHy7qL3ajJmN2W3-1)
-
-Your data is under: `../src/data`
+Après avoir construit le projet, vous pouvez démarrer l'application en mode production avec :
+npm run start
