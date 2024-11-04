@@ -25,6 +25,7 @@
 .Title {
     font-size: clamp(0.7rem, 1vw + 1rem, 1.5rem);
     line-height: 2.6;
+    
 }
  
 .Subtitle {
@@ -55,7 +56,8 @@
     padding: 0.7rem 0.3rem;
     border: 1px solid var(--main-text-color);
     background-color: white;
-    width: min(30vh,225px);
+    width: fit-content;
+    margin: 0 auto;
     text-decoration: none;
     transition: border 0.6s ease, background-color 0.8s ease, color 0.5s ease; 
     color: var(--main-text-color); 

@@ -2,8 +2,8 @@
     position: relative;
     width: min(90%,1196px);
     margin-inline: auto;
-    height: 100%;
-    min-height: 560px;
+    max-height: 560px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,8 @@
 .Banner {
     position: relative;
     width: 100%;
-    min-height: 480px;
+    max-height: 480px;
+    height: auto;
     aspect-ratio: 299/120;
 }
 
@@ -25,7 +26,8 @@
 .Foreground {
     position: absolute;
     left: 7.62rem;
-    min-height: 560px;
+    max-height: 560px;
+    height: auto;
     max-width: 345px;
     width: 100%;
     z-index: 90; 
@@ -47,9 +49,9 @@
 }
  
 .Description {
-    font-size: clamp(0.65rem, 1vw + 0.8rem, 1.25rem);
+    font-size: clamp(0.6rem, 1vw + 0.5rem, 1rem);
     line-height: 1.5;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
 @media (max-width: 1024px) {
