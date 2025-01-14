@@ -27,6 +27,7 @@ export default function ActicleComponent ({
 
         {firstParagraph && (
             <div
+            tabIndex={0}
             className={styles.ArticleParagraph}
             dangerouslySetInnerHTML={{ __html: firstParagraph }}  
            />
@@ -36,6 +37,7 @@ export default function ActicleComponent ({
         {
         secondParagraph && (
             <div
+            tabIndex={0}
             className={styles.ArticleParagraph}
             dangerouslySetInnerHTML={{ __html: secondParagraph }}  
         />

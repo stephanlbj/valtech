@@ -18,7 +18,8 @@ export default function ValtechOffice({card}: ValtechOfficeprops) {
                         className={styles.Image}
                         priority
                     />
-                    <div className={styles.TextOverlay}>
+                  <div className={styles.CardContext}>
+                  <div className={styles.TextOverlay}>
                       <h1 className={styles.Subtitle}>{card.subtitle}</h1>
                         <h2 className={styles.Title}>{card.title}</h2>
                         <p className={styles.Description}>{card?.description}</p>
@@ -33,6 +34,7 @@ export default function ValtechOffice({card}: ValtechOfficeprops) {
                         </Link>
                     ) 
                 }
+                  </div>
                
                 
                

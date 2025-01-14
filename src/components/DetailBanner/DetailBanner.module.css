@@ -1,16 +1,16 @@
 .Wrapper{
     position: relative;
     width: 100%;
-    min-height: 480px;
+    height: clamp(200px, 50vw, 480px);
     margin-bottom: 4.14rem;
 }
 
 .BackgroundImage {
     position: relative;
     width: 100%;
-    min-height: 480px;
+    height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 

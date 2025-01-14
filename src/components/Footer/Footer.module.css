@@ -2,12 +2,11 @@
     position: relative;
     background-color: var(--main-text-color);
     width: 100%; 
-    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    min-height: 400px;
+    height: clamp(200px, 50vw, 400px);
     position: relative;
 }
 

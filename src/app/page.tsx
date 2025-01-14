@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Banner from "@/components/Banner/Banner";
 import dynamic from 'next/dynamic'
+import styles from "./page.module.css"
+
 
 const ValtechOffices = dynamic(() => import('@/components/ValtechOffices/ValtechOffices'));
 
@@ -19,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata>{
 export default function Home() {
 
   return (
-    <main >
+    <main className={styles.Wrapper}>
       <Banner/>
       <ValtechOffices/>
     </main>
